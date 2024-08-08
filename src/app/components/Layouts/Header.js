@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { MenuData } from "@/app/data/menudata"; 
 
 export default function Header() {
   const [header, SetHeader] = useState(false);
@@ -26,6 +27,7 @@ export default function Header() {
   };
 
   return (
+    <>
     <div
       className={
         header? "fixed w-[100%] bg-black text-white "
@@ -39,25 +41,27 @@ export default function Header() {
         <div className="menu hidden lg:flex flex-row items-center justify-center">
           {/* <nav className="flex flex-row items-center justify-between mx-auto w-full"> */}
           <ul className="flex flex-row items-center justify-center">
-            <li className="mx-4">
-              <Link href="">Home</Link>{" "}
+          {MenuData.map( ( data ,i)=>(
+            <li key={i} className="mx-4">
+              <Link href={data.link }>{data.title}</Link>{" "}
             </li>
-            <li className="mx-4">
-              {" "}
-              <Link href="">Home</Link>
-            </li>
-            <li className="mx-4">
-              {" "}
-              <Link href="">Home</Link>
-            </li>
-            <li className="mx-4">
-              {" "}
-              <Link href="">Home</Link>
-            </li>
-            <li className="mx-4">
-              {" "}
-              <Link href="">Home</Link>
-            </li>
+            // <li className="mx-4">
+            //   {" "}
+            //   <Link href="">Home</Link>
+            // </li>
+            // <li className="mx-4">
+            //   {" "}
+            //   <Link href="">Home</Link>
+            // </li>
+            // <li className="mx-4">
+            //   {" "}
+            //   <Link href="">Home</Link>
+            // </li>
+            // <li className="mx-4">
+            //   {" "}
+            //   <Link href="">Home</Link>
+            // </li>
+            ))}
           </ul>
           {/* </nav> */}
         </div>
@@ -68,25 +72,28 @@ export default function Header() {
       {menuOpen && (
         <div className="lg:hidden bg-amber-400 text-white w-full px-12 py-4">
           <ul className="flex flex-col items-start">
-            <li className="py-2 w-full">
-              <Link href="/">Home</Link>
+          {MenuData.map( ( data ,i)=>(
+            <li key={i} className="py-2 w-full">
+              <Link href={data.link}>{data.title}</Link>
             </li>
-            <li className="py-2 w-full">
-              <Link href="/about">About</Link>
-            </li>
-            <li className="py-2 w-full">
-              <Link href="/services">Services</Link>
-            </li>
-            <li className="py-2 w-full">
-              <Link href="/contact">Contact</Link>
-            </li>
-            <li className="py-2 w-full">
-              <Link href="/blog">Blog</Link>
-            </li>
+            // <li className="py-2 w-full">
+            //   <Link href="/about">About</Link>
+            // </li>
+            // <li className="py-2 w-full">
+            //   <Link href="/services">Services</Link>
+            // </li>
+            // <li className="py-2 w-full">
+            //   <Link href="/contact">Contact</Link>
+            // </li>
+            // <li className="py-2 w-full">
+            //   <Link href="/blog">Blog</Link>
+            // </li>
+             ))}
           </ul>
         </div>
       )}
     </div>
-    // </div>
+    {/* // </div> */}
+    </>
   );
 }
