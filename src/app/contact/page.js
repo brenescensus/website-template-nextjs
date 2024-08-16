@@ -13,7 +13,7 @@ export default function ContactPage() {
   return (
     <>
     <Header/>
-    <Breadcrumb/>
+    <Breadcrumb active_menu="Get in touch "  title="Contact Us"/>
     <Contact/>
    
          <Footer/>

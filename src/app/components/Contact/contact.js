@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 import { FaLocationPin } from "react-icons/fa6";
+import { ContactData } from "@/app/data/contactdata";
 
 export default function contact() {
   return (
@@ -12,33 +13,37 @@ export default function contact() {
           <h1 className="text-3xl font-extrabold">Contact Us</h1>
           <p className="text-lg">In case of an queries,reach us through:</p>
           <div className="border-s-violet-200 flex flex-col gap-6 mt-5">
-            <div className="flex flex-row items-center justify-start gap-3 ">
+            {ContactData.map( (contactdata,i )=>(
+
+          
+            <div key={i} className="flex flex-row items-center justify-start gap-3 ">
               <div className="text-[40px] text-amber-400">
-                <FaPhone />
+               {contactdata.icon}
               </div>
               <div className="flex flex-col">
-                <h1 className="font-bold">Call Us</h1>
-                <Link href="call">+254 76456767</Link>
+                <h1 className="font-bold">{contactdata.title}</h1>
+                <Link href={contactdata.link}>{contactdata.description}</Link>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-start gap-3 ">
-              <div className="text-[40px] text-amber-400">
-                <FaEnvelope />
-              </div>
-              <div className="flex flex-col">
-                <h1 className="font-bold">Email Us</h1>
-                <Link href="emailto:">example@gmail.com</Link>
-              </div>
-            </div>
-            <div className="flex flex-row items-center justify-start gap-3 ">
-              <div className="text-[40px] text-amber-400">
-                <FaLocationPin />
-              </div>
-              <div className="flex flex-col">
-                <h1 className="font-bold">Visit Us </h1>
-                <Link href="callto:">295 Kakamega</Link>
-              </div>
-            </div>
+            // <div className="flex flex-row items-center justify-start gap-3 ">
+            //   <div className="text-[40px] text-amber-400">
+            //     <FaEnvelope />
+            //   </div>
+            //   <div className="flex flex-col">
+            //     <h1 className="font-bold">Email Us</h1>
+            //     <Link href="emailto:">example@gmail.com</Link>
+            //   </div>
+            // </div>
+            // <div className="flex flex-row items-center justify-start gap-3 ">
+            //   <div className="text-[40px] text-amber-400">
+            //     <FaLocationPin />
+            //   </div>
+            //   <div className="flex flex-col">
+            //     <h1 className="font-bold">Visit Us </h1>
+            //     <Link href="callto:">295 Kakamega</Link>
+            //   </div>
+            // </div>
+              ) )}
           </div>
         </div>
         <div className="col-span-2 ">

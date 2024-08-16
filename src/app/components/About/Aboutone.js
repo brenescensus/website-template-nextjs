@@ -32,7 +32,7 @@ export default function Aboutone() {
           
           <div key={i}
           className=" hover:shadow-xl hover:shadow-amber-400 h-[300px] mb-5 rounded-3xl flex flex-col items-center justify-center">
-            <div className=" mb-2 content-center place-content-center flex justify-center text-white text-6xl items-center mt-[-38px] ml-5 h-20 rounded-full bg-amber-400 w-20 group-hover:bg-amber-400 hover:color-white hover:opacity-100 hover:transition ease-in-out">
+            <div className=" mb-2 content-center place-content-center flex justify-center text-white text-6xl items-center mt-[-38px] ml-5 h-20 rounded-full bg-amber-400 w-20 group-hover:bg-amber-400 hover:color-white hover:opacity-100 hover:transition ease-in-out hover:skew-x-12">
               {/* <MdCarpenter className="text-white text-6xl" /> */}{abtdata.icon}
               {/* <h1 className='text-amber-800 text-center text-3xl font-bold hover:text-white '>Service 1 </h1> */}
             </div>

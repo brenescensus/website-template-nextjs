@@ -7,21 +7,27 @@ import Aboutone from './components/About/Aboutone'
 import Serviceone from './components/Service/Serviceone'
 import Header from './components/Layouts/Header'
 import  Contact from './components/Contact/contact'
+import Abouttwo from './components/About/abouttwo'
+import Aboutthree from './components/About/aboutthree'
 
 export default function page() {
   return (
     <>
     <Header/>
-    <Breadcrumb/>
+  <Hero/>
+  <Abouttwo/>
+  <Aboutthree/>
+  <Footer />
+
+    {/* <Breadcrumb/> */}
     {/* <Contact/> */}
     {/* <Serviceone/> */}
-    <Aboutone/>
-         <Footer/>
+    {/* <Aboutone/> */}
+       
 
     </>
     
     
-    // {/* <Hero/> */}
     
    
   

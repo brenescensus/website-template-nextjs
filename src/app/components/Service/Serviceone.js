@@ -19,9 +19,9 @@ export default function Serviceone() {
         </h1>
       </div>
       {/* <h1 className='text-[26px] mb-2 content-center text-black'>Our Services</h1> */}
-      <div className=" group grid grid-cols-1 gap-5 mt-4 lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3">
+      <div className=" group grid grid-cols-1 gap-5 mt-4 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
         {ServiceData.map( (servicedata,i)=>(
-          
+
         <div key={i} className=" h-[500px] mb-5 rounded-3xl flex flex-col">
          <div className="h-[60%]">
          <Image

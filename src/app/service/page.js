@@ -13,7 +13,7 @@ export default function ServicePage() {
   return (
     <>
     <Header/>
-    <Breadcrumb/>
+    <Breadcrumb active_menu=" Our Services "  title="services"/>
     {/* <Contact/> */}
     <Serviceone/>
     {/* <Aboutone/> */}

@@ -30,37 +30,20 @@ export default function Header() {
     <>
     <div
       className={
-        header? "fixed w-[100%] bg-black text-white "
-          : "bg-[transparent] text-black "
-      }
-    >
-      <div className=" headerpx-12 flex flex-row m-auto px-10 items-center justify-between w-full py-10">
+        header? "fixed w-[100%] bg-black text-white  z-20 ":"bg-[transparent] text-black"} >
+      <div className=" header  flex flex-row m-auto px-10 items-center justify-between w-full py-5">
         <div className="logo">
+          <h1 className="text-amber-400 text-4xl font-extrabold">My Logo Here</h1>
              {/* <Image src="/Assets/Images/Logo/brenny-logo.png" width={70} height={70}/>  */}
              </div>
         <div className="menu hidden lg:flex flex-row items-center justify-center">
           {/* <nav className="flex flex-row items-center justify-between mx-auto w-full"> */}
           <ul className="flex flex-row items-center justify-center">
           {MenuData.map( ( data ,i)=>(
-            <li key={i} className="mx-4">
+            <li key={i} className="mx-4 hover:text-amber-400">
               <Link href={data.link }>{data.title}</Link>{" "}
             </li>
-            // <li className="mx-4">
-            //   {" "}
-            //   <Link href="">Home</Link>
-            // </li>
-            // <li className="mx-4">
-            //   {" "}
-            //   <Link href="">Home</Link>
-            // </li>
-            // <li className="mx-4">
-            //   {" "}
-            //   <Link href="">Home</Link>
-            // </li>
-            // <li className="mx-4">
-            //   {" "}
-            //   <Link href="">Home</Link>
-            // </li>
+            // 
             ))}
           </ul>
           {/* </nav> */}
@@ -76,18 +59,7 @@ export default function Header() {
             <li key={i} className="py-2 w-full">
               <Link href={data.link}>{data.title}</Link>
             </li>
-            // <li className="py-2 w-full">
-            //   <Link href="/about">About</Link>
-            // </li>
-            // <li className="py-2 w-full">
-            //   <Link href="/services">Services</Link>
-            // </li>
-            // <li className="py-2 w-full">
-            //   <Link href="/contact">Contact</Link>
-            // </li>
-            // <li className="py-2 w-full">
-            //   <Link href="/blog">Blog</Link>
-            // </li>
+            
              ))}
           </ul>
         </div>

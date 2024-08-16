@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <>
     <Header/>
-    <Breadcrumb/>
+    <Breadcrumb active_menu="About" title="About Us"/>
     {/* <Contact/> */}
     {/* <Serviceone/> */}
     <Aboutone/>

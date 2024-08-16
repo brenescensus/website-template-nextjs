@@ -16,3 +16,13 @@ module.exports = {
   },
   plugins: [],
 };
+// const sr = ScrollReveal({
+//   origin: 'top',
+//   distance: '30px',
+//   duration: 1000,
+//   delay: 400,
+// });
+
+//  sr.reveal('.here_text',{origin:'top'});
+//  sr.reveal('.stp',{distance:'188px',interval:100});
+

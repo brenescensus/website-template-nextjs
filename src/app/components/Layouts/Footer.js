@@ -15,7 +15,7 @@ export default function Footer() {
 
     <>
       <footer className=" bg-gray-500 py-3 mt-5">
-        <div className=" mt-4 w-full  px-24 pt-12  grid grid-cols-1 gap-5  lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 ">
+        <div className=" border-b-2 border-white mt-4 w-full  px-24 pt-12  grid grid-cols-1 gap-5  lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 ">
           {/* <div className="    "> */}
           {/* <div className="  "> */}
 
@@ -63,61 +63,62 @@ export default function Footer() {
             </div>
           </div>
           <div className="   mb-5 rounded-3xl flex flex-col items-center  py-2">
-            <h1 className="font-bold text-2xl mb-4">Links</h1>
+            <h1 className="font-bold text-2xl mb-4">Our Services</h1>
 
-            <ul className="list-disc gap-6 justify-center">
-              <li className="text-xl">
-                <Link href="#">Link one</Link>
+            <ul className=" gap-8 justify-center">
+              <li className="text-xl gap-8">
+                <Link href="#">Service one</Link>
               </li>
               <li className="text-xl">
-                <Link href="#">Link two</Link>
-              </li>
-
-              <li className="text-xl">
-                <Link href="#">Link Three</Link>
+                <Link href="#">Service two</Link>
               </li>
 
               <li className="text-xl">
-                <Link href="#">Link Four</Link>
+                <Link href="#">Service Three</Link>
+              </li>
+
+              <li className="text-xl">
+                <Link href="#">Service Four</Link>
               </li>
             </ul>
           </div>
             <div className="   mb-5 rounded-3xl flex flex-col items-center  py-2">
-            <h1 className="font-bold text-2xl mb-4">Links</h1>
+            <h1 className="font-bold text-2xl mb-4">Quick Links</h1>
 
-            <ul className="list-disc gap-6 justify-center">
-              <li className="text-xl">
-                <Link href="#">Link one</Link>
-              </li>
-              <li className="text-xl">
-                <Link href="#">Link two</Link>
-              </li>
+            <ul className=" gap-8 justify-center">
 
-              <li className="text-xl">
-                <Link href="#">Link Three</Link>
+              <li className="text-xl hover:text-amber-400">
+                <Link href="/">Home</Link>
+              </li>
+              <li className="text-xl hover:text-amber-400">
+                <Link href="/about">About</Link>
               </li>
 
-              <li className="text-xl">
-                <Link href="#">Link Four</Link>
+              <li className="text-xl  hover:text-amber-400">
+                <Link href="/service">Service</Link>
+              </li>
+
+              <li className="text-xl hover:text-amber-400">
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
-           <div className="   mb-5 rounded-3xl flex flex-col gap-5 items-center  py-2">
+           <div className="   mb-5 rounded-3xl flex flex-col gap-5 items-center  justify-start py-2">
             <h1 className="font-bold text-2xl mb-4">Contact Us</h1>
-            <p>Phone:<a href="">087654322333</a></p>
-            <p>Email:<a href="">info@gmail.com</a></p>
+            <p>Phone:<a href="tel:087654322333">087654322333</a></p>
+            <p>Email:<a href="mailto:example@gmail.com">example@gmail.com</a></p>
 
-            <p>Address:<a href="">123456789</a></p>
+            <p>Address:<a href="">123456789 Soy kakamega</a></p>
           </div>
 
          
         </div>
-        <div className="flex flex-col items-center justify-center text-black text-center">
-        <hr className="h-px my-8 bg-white border-0 dark:bg-white"></hr>
+        <div className="flex flex-col items-center justify-center text-black py-3 text-center">
+        {/* <hr className="h-px my-8 bg-white border-0 dark:bg-white"></hr> */}
 
-          <p className="capitalize text-white pt-2">
+          <p className="capitalize text-white text-center ">
             {" "}
-            All rights reserved .Copyright © This Company.Designed By{" "}
+            All rights reserved .&copy; {new Date().getFullYear()} This Company.Designed By{" "}
             <Link href="#">Brenes Census</Link>
           </p>
         </div>
