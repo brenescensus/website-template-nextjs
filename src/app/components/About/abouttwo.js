@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Abouttwo() {
   return (
-    <div className="container mx-auto mt-[-70px] grid grid-cols-1 gap-9 lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3">
+    <div className="  relative z-10 container mx-auto mt-[-70px]  grid grid-cols-1  gap-9  lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3">
       {AboutData.map((abtdata, i) => (
         <motion.div
           key={i}
