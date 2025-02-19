@@ -25,34 +25,15 @@ export default function contact() {
                 <Link href={contactdata.link}>{contactdata.description}</Link>
               </div>
             </div>
-            // <div className="flex flex-row items-center justify-start gap-3 ">
-            //   <div className="text-[40px] text-amber-400">
-            //     <FaEnvelope />
-            //   </div>
-            //   <div className="flex flex-col">
-            //     <h1 className="font-bold">Email Us</h1>
-            //     <Link href="emailto:">example@gmail.com</Link>
-            //   </div>
-            // </div>
-            // <div className="flex flex-row items-center justify-start gap-3 ">
-            //   <div className="text-[40px] text-amber-400">
-            //     <FaLocationPin />
-            //   </div>
-            //   <div className="flex flex-col">
-            //     <h1 className="font-bold">Visit Us </h1>
-            //     <Link href="callto:">295 Kakamega</Link>
-            //   </div>
-            // </div>
+           
               ) )}
           </div>
         </div>
         <div className="col-span-2 ">
-          {/* <h1 className="text-center">Wewant to here from you today</h1> */}
           <form
             action="" className="grid grid-cols-1 py-10 gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
           >
             <div className="flex flex-col ">
-              {/* <label htmlFor="name">Name</label> */}
               <input
                 type="text"
                 placeholder="FullName"
